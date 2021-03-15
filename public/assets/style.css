@@ -1,0 +1,75 @@
+p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.por {
+    margin-top: 25px;
+}
+
+.prof {
+    box-shadow: 0 2px 5px black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+@media(max-width: 992px) {
+    .pp {
+        margin-top: 10px;
+    }
+
+    .navbar {
+        background-color: #343a40;
+
+    }
+
+    .jumbotron {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .kotak {
+        background-color: white;
+        padding: 20px;
+        margin-top: -130px;
+        box-shadow: 0 3px 20px black;
+        position: relative;
+        z-index: 3;
+    }
+
+    .kotak-p {
+        background-color: rgba(255, 255, 255, 0.347);
+        padding: 20px;
+        margin-top: -130px;
+        box-shadow: 0 3px 20px black;
+        position: relative;
+        z-index: 3;
+    }
+
+    .dl {
+        box-shadow: 0 3px 5px 0px black;
+    }
+
+    .cc::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+    }
+
+    .containerMe {
+        margin: 0 100px;
+    }
+
+    .bor:hover::after {
+        content: '';
+        border-bottom: 1px solid white;
+        display: block;
+        margin-top: -1px;
+    }
+}
